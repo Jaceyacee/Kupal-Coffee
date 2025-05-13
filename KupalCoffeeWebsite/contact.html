@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Kupal Coffee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="menu-btn" id="menuBtn">&#9776;</div>
+        <div class="logo">
+            <img src="images/kupalcoffeeshoplogo.png" alt="Kural Coffee Logo">
+        </div>
+        <a href="reservation.html">
+        <button class="order-now-btn">Order Now!</button>
+    </a>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="images/kupalcoffeeshoplogo.png" alt="Kural Coffee Logo">
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lunchmenu.html">Lunch Menu</a></li>
+                <li><a href="dinnermenu.html">Dinner Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main content section for contact page -->
+    <div class="contact-content">
+        <section class="contact-section">
+            <div class="left-section">
+                <h2>Visit us:</h2>
+                <p>Sushi Street 46/A, Manchester</p>
+                <p>+11 222 333 444</p>
+
+                <h3>Our Hours:</h3>
+                <p>Monday - Thursday: 11:30 - 14:30, 18:00 - 22:30</p>
+                <p>Friday - Saturday: 11:00 - 14:00, 18:00 - 22:30</p>
+                <p>Sunday: 11:00 - 14:00</p>
+
+                <h3>Inquiries at:</h3>
+                <p>sushibloom@sushibloom.com</p>
+            </div>
+
+            <div class="right-section">
+                <h3>Contact Form</h3>
+                <!-- Modified form here with action attribute -->
+                <form action="reservation-success.html" method="get">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name">
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Your message here"></textarea>
+
+                    <!-- Removed <a> tag and used button inside the form -->
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- Link to the sidebar JS -->
+    <script src="sidebar.js"></script>
+</body>
+</html>

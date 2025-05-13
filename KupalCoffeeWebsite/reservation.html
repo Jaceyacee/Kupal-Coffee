@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - Kupal Coffee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="menu-btn" id="menuBtn">&#9776;</div>
+        <div class="logo">
+            <img src="images/kupalcoffeeshoplogo.png" alt="Kural Coffee Logo">
+        </div>
+        <a href="reservation.html">
+        <button class="order-now-btn">Order Now!</button>
+    </a>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="images/kupalcoffeeshoplogo.png" alt="Kural Coffee Logo">
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lunchmenu.html">Lunch Menu</a></li>
+                <li><a href="dinnermenu.html">Dinner Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main content section -->
+    <section class="reservation-content">
+        <div class="reservation-form">
+            <h2>Make Reservation</h2>
+            <form id="reservation-form">
+                <div class="form-section">
+                    <div class="section-item">
+                        <h3>1. Number of guests</h3>
+                        <div class="guest-selector">
+                            <button class="guest-btn" type="button">1</button>
+                            <button class="guest-btn" type="button">2</button>
+                            <button class="guest-btn" type="button">3</button>
+                            <button class="guest-btn" type="button">4</button>
+                            <button class="guest-btn" type="button">5</button>
+                            <button class="guest-btn" type="button">6</button>
+                            <button class="guest-btn" type="button">7</button>
+                            <button class="guest-btn" type="button">8</button>
+                            <button class="guest-btn" type="button">9</button>
+                        </div>
+                    </div>
+
+                    <div class="section-item">
+                        <h3>2. Length of your visit</h3>
+                        <div class="visit-duration">
+                            <button class="duration-btn" type="button">1 h</button>
+                            <button class="duration-btn" type="button">1.5 h</button>
+                            <button class="duration-btn" type="button">2 h</button>
+                            <button class="duration-btn" type="button">2.5 h</button>
+                        </div>
+                    </div>
+
+                    <div class="section-item">
+                        <h3>3. Select date</h3>
+                        <div class="calendar">
+                            <input type="date" name="reservation-date" required/>
+                        </div>
+                    </div>
+
+                    <div class="section-item">
+                        <h3>4. Contact info</h3>
+                        <div class="contact-info">
+                            <input type="text" name="full-name" placeholder="Full Name" required/>
+                            <input type="email" name="email" placeholder="Email Address" required/>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Request</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer (if applicable) -->
+    <footer>
+        <!-- Your footer content goes here -->
+    </footer>
+
+     <script>
+        // JavaScript for handling form submission and redirecting to reservation-success.html
+        document.getElementById('reservation-form').addEventListener('submit', function(e) {
+            e.preventDefault();  // Prevent form from submitting traditionally
+            window.location.href = "reservation-success.html";  // Redirect to success page
+        });
+    </script>
+    <script src="script.js"></script>
+    <script src="sidebar.js"></script>
+</body>
+</html>
